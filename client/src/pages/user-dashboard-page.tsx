@@ -301,9 +301,9 @@ export default function UserDashboardPage() {
                     <h3 className="mt-2 text-sm font-medium text-gray-900">No bookings yet</h3>
                     <p className="mt-1 text-sm text-gray-500">Get started by booking an event.</p>
                     <div className="mt-6">
-                      <Button asChild>
-                        <a href="/events">Browse Events</a>
-                      </Button>
+                      <Link href="/events">
+                        <Button className="cursor-pointer">Browse Events</Button>
+                      </Link>
                     </div>
                   </div>
                 )}
@@ -400,16 +400,11 @@ export default function UserDashboardPage() {
                                           <AlertDialogAction
                                             onClick={() => cancelBookingMutation.mutate(booking.id)}
                                             disabled={cancelBookingMutation.isPending}
-                                            className="bg-red-500 hover:bg-red-600"
                                           >
-                                            {cancelBookingMutation.isPending ? (
-                                              <>
-                                                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                                                Cancelling...
-                                              </>
-                                            ) : (
-                                              "Cancel Booking"
+                                            {cancelBookingMutation.isPending && (
+                                              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                                             )}
+                                            Cancel Booking
                                           </AlertDialogAction>
                                         </AlertDialogFooter>
                                       </AlertDialogContent>
@@ -427,9 +422,9 @@ export default function UserDashboardPage() {
                             You don't have any upcoming events booked.
                           </p>
                           <div className="mt-6">
-                            <Button asChild>
-                              <a href="/events">Browse Events</a>
-                            </Button>
+                            <Link href="/events">
+                              <Button className="cursor-pointer">Browse Events</Button>
+                            </Link>
                           </div>
                         </div>
                       )}
@@ -444,7 +439,7 @@ export default function UserDashboardPage() {
                               <TableHead>Date</TableHead>
                               <TableHead>Tickets</TableHead>
                               <TableHead>Total</TableHead>
-                              <TableHead>Status</TableHead>
+                              <TableHead></TableHead>
                             </TableRow>
                           </TableHeader>
                           <TableBody>
@@ -497,9 +492,9 @@ export default function UserDashboardPage() {
                     <h3 className="mt-2 text-sm font-medium text-gray-900">No bookings yet</h3>
                     <p className="mt-1 text-sm text-gray-500">Get started by booking an event.</p>
                     <div className="mt-6">
-                      <Button asChild>
-                        <a href="/events">Browse Events</a>
-                      </Button>
+                      <Link href="/events">
+                        <Button className="cursor-pointer">Browse Events</Button>
+                      </Link>
                     </div>
                   </div>
                 )}
