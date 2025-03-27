@@ -48,12 +48,12 @@ export default function CategoryCard({ category }: CategoryCardProps) {
 
   return (
     <Link href={`/events?category=${category.id}`}>
-      <a className="flex flex-col items-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+      <div className="flex flex-col items-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer">
         <div className={`bg-${category.color}-100 p-3 rounded-full mb-3`}>
           {getIcon()}
         </div>
         <span className="text-sm font-medium text-gray-900">{category.name}</span>
-      </a>
+      </div>
     </Link>
   );
 }

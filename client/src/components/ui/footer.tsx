@@ -15,30 +15,30 @@ export default function Footer() {
                 <ul className="mt-4 space-y-4">
                   <li>
                     <Link href="/about">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <span className="text-base text-gray-300 hover:text-white cursor-pointer">
                         About
-                      </a>
+                      </span>
                     </Link>
                   </li>
                   <li>
                     <Link href="/blog">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <span className="text-base text-gray-300 hover:text-white cursor-pointer">
                         Blog
-                      </a>
+                      </span>
                     </Link>
                   </li>
                   <li>
                     <Link href="/careers">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <span className="text-base text-gray-300 hover:text-white cursor-pointer">
                         Careers
-                      </a>
+                      </span>
                     </Link>
                   </li>
                   <li>
                     <Link href="/press">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <span className="text-base text-gray-300 hover:text-white cursor-pointer">
                         Press
-                      </a>
+                      </span>
                     </Link>
                   </li>
                 </ul>
@@ -51,30 +51,30 @@ export default function Footer() {
                 <ul className="mt-4 space-y-4">
                   <li>
                     <Link href="/help">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <span className="text-base text-gray-300 hover:text-white cursor-pointer">
                         Help Center
-                      </a>
+                      </span>
                     </Link>
                   </li>
                   <li>
                     <Link href="/contact">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <span className="text-base text-gray-300 hover:text-white cursor-pointer">
                         Contact Us
-                      </a>
+                      </span>
                     </Link>
                   </li>
                   <li>
                     <Link href="/privacy">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <span className="text-base text-gray-300 hover:text-white cursor-pointer">
                         Privacy
-                      </a>
+                      </span>
                     </Link>
                   </li>
                   <li>
                     <Link href="/terms">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <span className="text-base text-gray-300 hover:text-white cursor-pointer">
                         Terms
-                      </a>
+                      </span>
                     </Link>
                   </li>
                 </ul>
@@ -89,30 +89,30 @@ export default function Footer() {
                 <ul className="mt-4 space-y-4">
                   <li>
                     <Link href="/events">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <span className="text-base text-gray-300 hover:text-white cursor-pointer">
                         Browse Events
-                      </a>
+                      </span>
                     </Link>
                   </li>
                   <li>
                     <Link href="/events?filter=categories">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <span className="text-base text-gray-300 hover:text-white cursor-pointer">
                         Categories
-                      </a>
+                      </span>
                     </Link>
                   </li>
                   <li>
                     <Link href="/events?filter=calendar">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <span className="text-base text-gray-300 hover:text-white cursor-pointer">
                         Calendar
-                      </a>
+                      </span>
                     </Link>
                   </li>
                   <li>
                     <Link href="/host">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <span className="text-base text-gray-300 hover:text-white cursor-pointer">
                         Host an Event
-                      </a>
+                      </span>
                     </Link>
                   </li>
                 </ul>
@@ -125,30 +125,30 @@ export default function Footer() {
                 <ul className="mt-4 space-y-4">
                   <li>
                     <Link href="/auth">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <span className="text-base text-gray-300 hover:text-white cursor-pointer">
                         Sign Up
-                      </a>
+                      </span>
                     </Link>
                   </li>
                   <li>
                     <Link href="/auth">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <span className="text-base text-gray-300 hover:text-white cursor-pointer">
                         Log In
-                      </a>
+                      </span>
                     </Link>
                   </li>
                   <li>
                     <Link href="/dashboard">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <span className="text-base text-gray-300 hover:text-white cursor-pointer">
                         Dashboard
-                      </a>
+                      </span>
                     </Link>
                   </li>
                   <li>
                     <Link href="/dashboard?tab=bookings">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <span className="text-base text-gray-300 hover:text-white cursor-pointer">
                         My Tickets
-                      </a>
+                      </span>
                     </Link>
                   </li>
                 </ul>

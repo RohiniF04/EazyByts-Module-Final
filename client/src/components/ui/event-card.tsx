@@ -32,10 +32,10 @@ export default function EventCard({ event }: EventCardProps) {
         </div>
         
         <Link href={`/events/${event.id}`}>
-          <a className="block mt-2">
+          <div className="block mt-2 cursor-pointer">
             <h3 className="text-lg font-semibold text-gray-900">{event.title}</h3>
             <p className="mt-1 text-gray-500 line-clamp-2">{event.description}</p>
-          </a>
+          </div>
         </Link>
         
         <div className="mt-4 flex items-center">
@@ -57,7 +57,7 @@ export default function EventCard({ event }: EventCardProps) {
         <div className="mt-4 flex justify-between items-center">
           <span className="text-primary font-semibold">${(event.price / 100).toFixed(2)}</span>
           <Link href={`/events/${event.id}`}>
-            <Button size="sm">Book Now</Button>
+            <Button size="sm" className="cursor-pointer">Book Now</Button>
           </Link>
         </div>
       </div>

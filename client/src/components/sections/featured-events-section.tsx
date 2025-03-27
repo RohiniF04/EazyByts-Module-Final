@@ -27,9 +27,9 @@ export default function FeaturedEventsSection() {
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-2xl font-semibold text-gray-900">Featured Events</h2>
           <Link href="/events">
-            <a className="text-primary hover:text-primary-700 font-medium">
+            <span className="text-primary hover:text-primary-700 font-medium cursor-pointer">
               View all events <span aria-hidden="true">→</span>
-            </a>
+            </span>
           </Link>
         </div>
         

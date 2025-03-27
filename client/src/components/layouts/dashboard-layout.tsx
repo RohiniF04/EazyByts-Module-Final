@@ -37,32 +37,32 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         <div className="flex-1 overflow-y-auto py-4">
           <nav className="px-4 space-y-1">
             <Link href="/dashboard">
-              <a className={`flex items-center px-2 py-2 text-sm font-medium rounded-md ${
+              <span className={`flex items-center px-2 py-2 text-sm font-medium rounded-md cursor-pointer ${
                 location === '/dashboard' 
                   ? 'bg-primary-50 text-primary-700' 
                   : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
               }`}>
                 <LayoutDashboard className="mr-3 h-5 w-5" />
                 Dashboard
-              </a>
+              </span>
             </Link>
             
             <Link href="/dashboard?tab=bookings">
-              <a className={`flex items-center px-2 py-2 text-sm font-medium rounded-md ${
+              <span className={`flex items-center px-2 py-2 text-sm font-medium rounded-md cursor-pointer ${
                 location.includes('bookings') 
                   ? 'bg-primary-50 text-primary-700' 
                   : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
               }`}>
                 <Ticket className="mr-3 h-5 w-5" />
                 My Bookings
-              </a>
+              </span>
             </Link>
             
             <Link href="/events">
-              <a className="flex items-center px-2 py-2 text-sm font-medium rounded-md text-gray-600 hover:bg-gray-50 hover:text-gray-900">
+              <span className="flex items-center px-2 py-2 text-sm font-medium rounded-md text-gray-600 hover:bg-gray-50 hover:text-gray-900 cursor-pointer">
                 <Calendar className="mr-3 h-5 w-5" />
                 Browse Events
-              </a>
+              </span>
             </Link>
             
             {isAdmin && (
@@ -74,36 +74,36 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                 </div>
                 
                 <Link href="/admin">
-                  <a className={`flex items-center px-2 py-2 text-sm font-medium rounded-md ${
+                  <span className={`flex items-center px-2 py-2 text-sm font-medium rounded-md cursor-pointer ${
                     location === '/admin' 
                       ? 'bg-primary-50 text-primary-700' 
                       : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                   }`}>
                     <LayoutDashboard className="mr-3 h-5 w-5" />
                     Admin Dashboard
-                  </a>
+                  </span>
                 </Link>
                 
                 <Link href="/admin/events">
-                  <a className={`flex items-center px-2 py-2 text-sm font-medium rounded-md ${
+                  <span className={`flex items-center px-2 py-2 text-sm font-medium rounded-md cursor-pointer ${
                     location.includes('/admin/events') && !location.includes('create')
                       ? 'bg-primary-50 text-primary-700' 
                       : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                   }`}>
                     <FileText className="mr-3 h-5 w-5" />
                     Manage Events
-                  </a>
+                  </span>
                 </Link>
                 
                 <Link href="/admin/events/create">
-                  <a className={`flex items-center px-2 py-2 text-sm font-medium rounded-md ${
+                  <span className={`flex items-center px-2 py-2 text-sm font-medium rounded-md cursor-pointer ${
                     location === '/admin/events/create' 
                       ? 'bg-primary-50 text-primary-700' 
                       : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                   }`}>
                     <Calendar className="mr-3 h-5 w-5" />
                     Create Event
-                  </a>
+                  </span>
                 </Link>
               </>
             )}
@@ -140,47 +140,47 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
       <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-10">
         <div className="grid grid-cols-4 h-16">
           <Link href="/dashboard">
-            <a className={`flex flex-col items-center justify-center ${
+            <span className={`flex flex-col items-center justify-center cursor-pointer ${
               location === '/dashboard' ? 'text-primary-600' : 'text-gray-600'
             }`}>
               <LayoutDashboard className="h-6 w-6" />
               <span className="text-xs mt-1">Dashboard</span>
-            </a>
+            </span>
           </Link>
           
           <Link href="/dashboard?tab=bookings">
-            <a className={`flex flex-col items-center justify-center ${
+            <span className={`flex flex-col items-center justify-center cursor-pointer ${
               location.includes('bookings') ? 'text-primary-600' : 'text-gray-600'
             }`}>
               <Ticket className="h-6 w-6" />
               <span className="text-xs mt-1">Bookings</span>
-            </a>
+            </span>
           </Link>
           
           <Link href="/events">
-            <a className="flex flex-col items-center justify-center text-gray-600">
+            <span className="flex flex-col items-center justify-center text-gray-600 cursor-pointer">
               <Calendar className="h-6 w-6" />
               <span className="text-xs mt-1">Events</span>
-            </a>
+            </span>
           </Link>
           
           {isAdmin ? (
             <Link href="/admin">
-              <a className={`flex flex-col items-center justify-center ${
+              <span className={`flex flex-col items-center justify-center cursor-pointer ${
                 location.includes('/admin') ? 'text-primary-600' : 'text-gray-600'
               }`}>
                 <Users className="h-6 w-6" />
                 <span className="text-xs mt-1">Admin</span>
-              </a>
+              </span>
             </Link>
           ) : (
             <Link href="/dashboard?tab=settings">
-              <a className={`flex flex-col items-center justify-center ${
+              <span className={`flex flex-col items-center justify-center cursor-pointer ${
                 location.includes('settings') ? 'text-primary-600' : 'text-gray-600'
               }`}>
                 <Settings className="h-6 w-6" />
                 <span className="text-xs mt-1">Settings</span>
-              </a>
+              </span>
             </Link>
           )}
         </div>
